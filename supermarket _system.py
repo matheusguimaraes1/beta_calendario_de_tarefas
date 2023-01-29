@@ -30,13 +30,10 @@ class Caixa:
             print(f"{produto.nome}: R${produto.preco} x {produto.quantidade} = R${produto.preco * produto.quantidade}")
         print(f"Preço total: R${self.calcular_preco_total()}")
 
-    def registrar_venda(self):
-        # implemente a lógica para registrar a venda aqui (por exemplo, gravando em um arquivo)
-        pass
-
-# exemplo de uso
+        
+        
+#Exemplo de uso do código:
 caixa = Caixa()
 caixa.carrinho.adicionar_produto(Produto("Arroz", 5.0, 2))
 caixa.carrinho.adicionar_produto(Produto("Feijão", 7.0, 1))
 caixa.imprimir_recibo()
-caixa.registrar_venda()
